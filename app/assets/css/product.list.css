@@ -1,0 +1,4 @@
+
+body,.product-list-wapper,#main-region,.table-view {height: 100%;}
+.table-view {padding-top: 88px;overflow: auto;}
+.table-view .navigate-right img {width: 100px;height:100px;}

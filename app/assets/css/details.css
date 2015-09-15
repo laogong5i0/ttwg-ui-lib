@@ -1,0 +1,38 @@
+.content{ padding-bottom: 50px;}
+nav.bar.bar-tab .b-red, nav.bar.bar-tab .b-orange{width:2%;}
+
+/*产品简单详情*/
+.details{padding-top: 20px;}
+.details h1{font-size: 19px;}
+.details .collect{position: absolute;top: 40px;right: 40px;}
+.details .item-price{ font-size: 18px; padding: 14px 0 15px 0; }
+.details .item-price .red{ text-decoration: none; margin-right: 30px}
+
+/*简单评论*/
+.comment li{border-bottom: 1px solid #ccc;}
+.comment li:first-child { font-size: 24px; }
+.comment li.clearfix{text-align: center; padding: 10px 20px; }
+.comment li:last-child { border-top: 1px solid #ccc; }
+.comment li:nth-last-of-type(2){border-bottom: 0}
+.comment .table-view-cell{padding: 10px; margin: 0 20px;}
+/*详细评论*/
+.comment .media-body +div { padding: 10px 0; text-align: left;}
+
+/*轮播图*/
+.swiper-wrapper img{width:100%;}
+
+dialog.sku{background-color: rgba(0,0,0,0); padding: 0}
+.sku .sku-body{ background-color: #fff; position: absolute; bottom: 0; width: 100%; padding-bottom: 50px;}
+.sku .sku-row{border-bottom: 1px solid #b5b5b5; padding: 20px }
+.sku .sku-row:last-child{border-bottom: 0}
+.sku-body .close{ text-align: right; position: relative; display: inherit; right: 15px; top:15px;}
+.sku-body .close .icon{font-size: 30px;}
+.sku-body .header .img{    width: 100px;    position: absolute;    top: -30px;}
+.sku-body .header .img img{    width: 100%;}
+.sku-body .header .body{    margin-left: 120px;}
+.sku .buy-num{}
+.sku .buy-num div{ border: 1px solid #ccc; display: inline-block; line-height: 30px; width: 30px; text-align: center; font-size: 14px;}
+.sku .buy-num .num-display{border-left: 0; border-right: 0; width:60px;}
+
+/*产品更多详情*/
+.card .control-content {min-height: 568px;}

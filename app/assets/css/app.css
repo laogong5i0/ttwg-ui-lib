@@ -1,0 +1,58 @@
+﻿/* CSS */
+/*---- 重写ratchet 样式-----------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {margin: 0; padding: 0;}
+ul, ol, li { list-style: none; }
+body, mark, div, article, header, h1, h2, h3, h4, h5, h6, del, ins, li, input, select, a, p, span {font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;color: #787878;}
+input,select, span, div, p, article{font-size: 12px;}
+.content-padded{ margin: 0 20px;}
+.navigate-left:after, .navigate-right:after, .push-left:after, .push-right:after{ color: #ffffff;}
+.navigate-right:after, .push-right:after{right:20px;}
+.bar-tab .tab-item{ color: #fff;}
+header.bar.bar-nav { background-color: #ff4d4d; border:0;}
+header a, header h1.title {	color:#fff;}
+
+.card{margin: 0; border-radius: inherit; border:0px ;}
+.card .card-item{ padding: 10px; width: 100%; overflow: hidden; -webkit-box-flex: 1; flex: 1;}
+.segmented-control { border: 0; padding: 0; border-top: 1px solid #b8b8b8; border-bottom: 1px solid #b8b8b8;}
+.segmented-control a.control-item { padding: 15px 0; border: 0;}
+.segmented-control a.control-item.active { background-color: white;}
+.segmented-control a.control-item div{	border-left: 1px solid #b8b8b8;}
+.segmented-control a.control-item.active div span{ border-bottom: 5px solid #ff4d4d; padding-bottom: 10px;}
+
+/*********************** 重写ratchet一些UI，以适应设计稿 @zhangQing *****************************/
+input, textarea, button, select, body{font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;color: #b5b5b5;font-size: 14px;}
+.btn-primary{background-color: #da3b2b;border:1px solid #da3b2b;}
+.btn-primary:active, .btn-primary.active {background-color: #d33420;border: 1px solid #d33420;}
+.btn-outlined {background-color: transparent;}
+.btn-primary.btn-outlined {color:#da3b2b;}
+.icon {color: #da3b2b;}
+
+.content .bar{height: auto; border:0; background-color: #ff4d4d; position: relative; width: 100%; padding: 0}
+.content .bar .navigate-right{ padding: 10px 20px; color: #fff; font-size: 12px;}
+
+
+/*----自定义公共样式-----------------------------------------------------------------------------*/
+.red{ color: #ff4d4d; }
+.grey{ color: #b8b8b8; }
+.dark-grey{ color: #787878;}
+.b-orange{background-color: #ffb540}
+.b-red{background-color: #ff4d4d;}
+
+
+.overlay {
+    position: absolute; top: 0; left: 0; bottom: 0; width: 100%; background-color: rgba(0,0,0,.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+    overflow: auto; z-index: 1000; display: none;
+}
+/* IE9 无 filter */
+:root .overlay { filter: none;}
+.overlay dialog{display:block; border: 0}
+.overlay dialog.active{	display: block; border: 0; width: 100%; overflow: auto;}
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  
+}

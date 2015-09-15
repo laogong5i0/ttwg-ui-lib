@@ -19,6 +19,10 @@ module.exports = function(grunt) {
       dist: {
         src: ['lib/<%= pkg.name %>.js'],
         dest: 'dist/<%= pkg.name %>.js'
+      },
+      css: {
+        src: ['assets/css/*.css'],
+        dest: 'dist/css/style.css'
       }
     },
     uglify: {
@@ -78,6 +82,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  // grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  // grunt.registerTask('build', ['jshint', 'qunit', 'concat', 'uglify']);
 
 };

@@ -4,12 +4,8 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
-    banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+    pkg: grunt.file.readJSON('bower.json'),
+    banner: '/*------------------------------*/',
     // Task configuration.
     concat: {
       options: {
@@ -21,8 +17,8 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.js'
       },
       css: {
-        src: ['assets/css/*.css'],
-        dest: 'dist/css/style.css'
+        src: ['app/assets/css/*.css'],
+        dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
     uglify: {
@@ -83,6 +79,6 @@ module.exports = function(grunt) {
 
   // Default task.
   // grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
-  // grunt.registerTask('build', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('build', ['concat:css', 'uglify']);
 
 };

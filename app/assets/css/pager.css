@@ -1,0 +1,24 @@
+/**
+  * pager
+  * @FTsafe css
+  * By Xiaocai
+  **/
+.pager{ height:30px; line-height:30px; *zoom:1; }
+.pager:after{ display:block; content:'\20'; height:0; clear:both; overflow:hidden; visibility:hidden; }
+
+.pager .p-list{ float:left; }
+.pager .input-group{ width:56px; }
+.pager .input-group-addon{ padding:5px; }
+.pager .form-control{ padding-left:2px; padding-right:2px; height:30px; text-align:center; }
+.pager .btn{ margin-left:10px; padding:7px 10px; vertical-align:baseline; line-height:1; }
+
+.pager .p-item{ border-color:#e7e7eb; border-style:solid; border-width:1px 1px 1px 0; padding:4px 10px; }
+.pager .p-item[disabled]{ cursor:not-allowed; pointer-events:none; }
+.pager .p-item.current{ border-color:#1ea5e3; background:#1ea5e3; color:#fff; }
+.pager .p-item:hover{ box-shadow:inset 0px 3px 8px rgba(0,0,0,0.05); }
+.pager .ft-icon-toleft, .pager .ft-icon-toright{ padding-left:6px; padding-right:6px; }
+.pager .ft-icon-toleft{ border-width:1px; border-radius:4px 0 0 4px; }
+.pager .ft-icon-toright{ border-width:1px 1px 1px 0; border-radius:0 4px 4px 0; }
+.pager .ft-icon-toleft:before,
+  .pager .ft-icon-toright:before{ color:#1ea5e3; }
+.pager .p-total{ padding:0 10px 0 26px; color:#999; }

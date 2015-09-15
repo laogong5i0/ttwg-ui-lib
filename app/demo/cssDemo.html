@@ -1,0 +1,926 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PC端可通用css组件</title>
+  <link href="../util/reset.css" rel="stylesheet"/>
+  <link href="../util/base.css" rel="stylesheet"/>
+  <link href="../util/btn.css" rel="stylesheet"/>
+  <link href="../util/form.css" rel="stylesheet"/>
+  <link href="../util/grid.css" rel="stylesheet"/>
+  <link href="../util/nav.css" rel="stylesheet"/>
+  <link href="../util/pager.css" rel="stylesheet"/>
+  <link href="../util/table.css" rel="stylesheet"/>
+  <link href="../util/product.css" rel="stylesheet"/>
+
+
+  <style type="text/css">
+    .idx-title {
+      border-bottom: 1px solid #ccc;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 22px;
+      color: #000;
+    }
+
+    .idx-wrapper {
+      margin: 0 auto;
+      padding: 0 124px;
+      overflow: hidden;
+    }
+
+    .idx-contain {
+      margin: 0 24px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .h2 {
+      padding: 22px 0 12px;
+      font-size: 16px;
+      font-weight: 900;
+      color: #124CC7;
+    }
+
+    .h3 {
+      padding: 22px 0 8px;
+      font-size: 15px;
+      font-weight: 900;
+      color: #C31C1C;
+    }
+
+    .h4 {
+      padding: 12px 0 8px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #98A500;
+    }
+
+    .p {
+      text-indent: 12px;
+      color: #999;
+    }
+
+    .idx-contain > .h3:first-child {
+      padding-top: 6px;
+    }
+
+  </style>
+</head>
+
+<body>
+<h1 class="idx-title">PC端可通用css组件</h1>
+
+<div class="idx-wrapper">
+
+<h2 class="h2">矢量图标库iconfont:</h2>
+
+<div class="idx-contain">
+  <i class="ft-icon-plus"></i>
+  <i class="ft-icon-minus"></i>
+  <i class="ft-icon-left"></i>
+  <i class="ft-icon-toleft"></i>
+  <i class="ft-icon-toright"></i>
+  <i class="ft-icon-user"></i>
+  <i class="ft-icon-trans"></i>
+  <i class="ft-icon-up-after"></i>
+  <i class="ft-icon-down-after"></i>
+  <i class="ft-icon-collect"></i>
+  <i class="ft-icon-collect checked"></i>
+  <i class="ft-icon-reset"></i>
+
+  <i class="ft-icon-search"></i>
+  <i class="ft-icon-list"></i>
+  <i class="ft-icon-grid"></i>
+  <i class="ft-icon-order"></i>
+  <i class="ft-icon-column"></i>
+  <i class="ft-icon-tool"></i>
+  <i class="ft-icon-success"></i>
+  <i class="ft-icon-warning"></i>
+  <i class="ft-icon-error"></i>
+</div>
+
+<h2 class="h2">按钮:</h2>
+
+<div class="idx-contain">
+  <h3 class="h3">label标签：</h3>
+
+  <div>
+    <em class="btn-label label-default">Default</em>
+    <em class="btn-label label-primary">primary</em>
+    <em class="btn-label label-message">message</em>
+    <em class="btn-label label-info">info</em>
+    <em class="btn-label label-success">success</em>
+    <em class="btn-label label-warning">warning</em>
+    <em class="btn-label label-action">action</em>
+    <em class="btn-label label-danger">danger</em>
+    <em class="btn-label label-empty">empty</em>
+  </div>
+  <h3 class="h3">枚举按钮类型：</h3>
+
+  <div class="btn-area">
+    <em class="btn btn-default">按钮</em>
+    <em class="btn btn-primary">按钮</em>
+    <em class="btn btn-message">按钮</em>
+    <em class="btn btn-info">按钮</em>
+    <em class="btn btn-success">按钮</em>
+    <em class="btn btn-warning">按钮</em>
+    <em class="btn btn-action">按钮</em>
+    <em class="btn btn-danger">按钮</em>
+    <em class="btn btn-empty">按钮</em>
+    <em class="btn btn-solid">按钮</em>
+    <em class="btn btn-default btn-angle">直角按钮</em>
+    <a class="btn btn-link">链式按钮</a>
+  </div>
+
+  <div class="hide">
+    <h3 class="h3">子元素badge:</h3>
+
+    <div class="btn-area">
+      <em class="btn btn-default"><span class="badge">子元素badge</span></em>
+      <em class="btn btn-primary"><span class="badge">子元素badge</span></em>
+      <em class="btn btn-success"><span class="badge">子元素badge</span></em>
+      <em class="btn btn-warning"><span class="badge">子元素badge</span></em>
+      <em class="btn btn-danger"><span class="badge">子元素badge</span></em>
+    </div>
+  </div>
+
+  <h3 class="h3">按钮状态：</h3>
+
+  <div class="btn-area">
+    <em class="btn btn-default active">按钮激活状态</em>
+    <em class="btn btn-default disabled">按钮不可用</em>
+    <em class="btn btn-default" disabled='disabled'>按钮不可用2</em>
+  </div>
+
+  <h3 class="h3">按钮的size：</h3>
+
+  <div class="btn-area">
+    <em class="btn btn-default btn-lg">按钮</em>
+    <em class="btn btn-default">按钮</em>
+    <em class="btn btn-default btn-sm">按钮</em>
+    <em class="btn btn-default btn-xs">按钮</em>
+    <em class="btn btn-default btn-w-lg">宽按钮</em>
+    <em class="btn btn-default btn-w">宽按钮</em>
+  </div>
+
+  <h3 class="h3">枚举各类带icon的按钮：</h3>
+
+  <div class="btn-area">
+    <em class="btn btn-default ft-icon-plus">新增</em>
+    <em class="btn btn-default btn-w-lg ft-icon-search">大查询</em>
+
+    <em class="btn btn-default btn-w ft-icon-search">查询</em>
+
+    <em class="btn btn-empty ft-icon-up-after btn-sm-w">查询</em>
+    <em class="btn btn-empty ft-icon-down-after btn-sm-w">查询</em>
+  </div>
+
+  <h3 class="h3">按钮类：</h3>
+
+  <div class="btn-area">
+    <em class="btn btn-default">基本类型</em>
+    <a class="btn btn-default" href="#" role="button">Link类型</a>
+    <input class="btn btn-default" type="button" value="button类型">
+    <button class="btn btn-default" type="submit">button类型2</button>
+    <input class="btn btn-default" type="submit" value="submit类型">
+    <input class="btn btn-default" type="reset" value="reset类型">
+  </div>
+
+  <h3 class="h3">Block按钮（width:100%）：</h3>
+
+  <div class="btn-area btn-area-block">
+    <em class="btn btn-default btn-block">按钮</em>
+  </div>
+
+  <h3 class="h3">按钮位置：</h3>
+
+  <div class="btn-area b-a-l">
+    <em class="btn btn-default">按钮居左</em>
+    <em class="btn btn-success">按钮居左</em>
+  </div>
+  <div class="btn-area b-a-c">
+    <em class="btn btn-default">按钮居中</em>
+    <em class="btn btn-success">按钮居中</em>
+  </div>
+  <div class="btn-area b-a-r">
+    <em class="btn btn-default">按钮居右</em>
+    <em class="btn btn-success">按钮居右</em>
+  </div>
+
+</div>
+
+<h2 class="h2">表单（Form和Grid配合使用）:</h2>
+
+<div class="idx-contain">
+  <h3 class="h3">常规表单：</h3>
+
+  <form>
+    <div class="form-group">
+      <label for="name">姓名：</label>
+      <input type="text" class="form-control" id="name" placeholder="姓名名">
+    </div>
+  </form>
+
+  <h3 class="h3">内联表单：</h3>
+
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="name" class="sr-only">隐藏Label：</label>
+      <input type="text" class="form-control" id="name" placeholder="隐藏Label的Input">
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon">姓名</div>
+        <input type="text" class="form-control" id="name" placeholder="姓名名">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group input-group-addon-transparent">
+        <input type="text" class="form-control">
+        <span class="input-group-addon ft-icon-search"></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+      </div>
+    </div>
+    <div class="radio">
+      <input name="userVO.sex" id="userVO_sex0" checked="checked" value="0" type="radio">
+      <label for="userVO_sex0">男</label>
+      <input name="userVO.sex" id="userVO_sex1" value="1" type="radio">
+      <label for="userVO_sex1">女</label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">复选框
+      </label>
+      <label>
+        <input type="radio">单选按钮
+      </label>
+    </div>
+    <em class="btn btn-default">按钮</em>
+  </form>
+
+  <h3 class="h3">水平排列表单：</h3>
+
+  <form class="form-horizontal" style="width:500px;">
+    <div class="form-group">
+      <label for="name" class="col-xs-2 control-label">姓姓名名</label>
+
+      <div class="col-xs-7">
+        <input type="text" class="form-control" id="name" placeholder="姓名名">
+      </div>
+    </div>
+
+    <div class="form-group has-success has-feedback">
+      <label class="col-xs-2 control-label" for="inputSuccess2">success</label>
+
+      <div class="col-xs-7">
+        <input type="text" class="form-control" id="inputSuccess2">
+        <i class="ft-icon-success form-control-feedback"></i>
+      </div>
+    </div>
+    <div class="form-group has-warning has-feedback">
+      <label class="col-xs-2 control-label" for="inputWarning2">warning</label>
+
+      <div class="col-xs-7">
+        <input type="text" class="form-control" id="inputWarning2">
+        <i class="ft-icon-warning form-control-feedback"></i>
+      </div>
+    </div>
+    <div class="form-group has-error has-feedback">
+      <label class="col-xs-2 control-label" for="inputError2">error</label>
+
+      <div class="col-xs-7">
+        <input type="text" class="form-control" id="inputError2">
+        <i class="ft-icon-error form-control-feedback"></i>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="name2" class="col-xs-2 control-label">文本域</label>
+
+      <div class="col-xs-10">
+        <textarea class="form-control" rows="4" id="name2" placeholder="文本域"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-2 col-xs-10">
+        <div class="checkbox disabled">
+          <label class="checkbox-inline">
+            <input type="checkbox">复选框
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" disabled="disabled" value="">复选框
+          </label>
+        </div>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-2 col-xs-10">
+        <em class="btn btn-default">按钮</em>
+      </div>
+    </div>
+  </form>
+
+  <h3 class="h3">下拉:</h3>
+  <select class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+
+
+</div>
+
+<h2 class="h2">nav类:</h2>
+
+<div class="idx-contain">
+  <h3 class="h3">水平NavList：</h3>
+  <ul class="nav-horizontal clearfix">
+    <li><a href="#">水平NavList1</a></li
+      >
+    <li><a href="#">水平NavList2</a></li
+      >
+    <li><a href="#">水平NavList3</a></li>
+  </ul>
+
+  <h3 class="h3">水平NavTab -- 带下划线</h3>
+  <ul class="nav-tab clearfix">
+    <li><a class="current" href="#">水平NavList1</a></li
+      >
+    <li><a href="#">水平NavList2</a></li
+      >
+    <li><a href="#">水平NavList3</a></li>
+  </ul>
+
+  <h3 class="h3">垂直NavList：</h3>
+
+  <div style="width:210px">
+    <div class="nav-vertical">
+      <h3 class="nav-title ft-icon-grid">垂直NavList<i class="nav-choose ft-icon-minus"></i></h3>
+      <ul>
+        <li><a href="#">垂直NavList1</a></li
+          >
+        <li><a href="#">垂直NavList3</a></li>
+      </ul>
+    </div>
+    <div class="nav-vertical">
+      <h3 class="nav-title ft-icon-list">垂直NavList<i class="nav-choose ft-icon-minus"></i></h3>
+      <ul>
+        <li><a href="#">垂直NavList1</a></li>
+      </ul>
+    </div>
+    <div class="nav-vertical">
+      <h3 class="nav-title ft-icon-order">垂直NavList<i class="nav-choose ft-icon-minus"></i></h3>
+      <ul>
+        <li><a href="#">垂直NavList1</a></li>
+      </ul>
+    </div>
+    <div class="nav-vertical">
+      <h3 class="nav-title ft-icon-column">垂直NavList<i class="nav-choose ft-icon-minus"></i></h3>
+      <ul>
+        <li><a href="#">垂直NavList1</a></li>
+      </ul>
+    </div>
+    <div class="nav-vertical">
+      <h3 class="nav-title ft-icon-tool">垂直NavList<i class="nav-choose ft-icon-minus"></i></h3>
+      <ul>
+        <li><a href="#">垂直NavList1</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="h3">面包屑Nav：</h3>
+
+  <p class="nav-bread">面包屑导航样式--normal</p>
+
+  <div class="nav-bread n-b-border">
+    <a class="n-b-contain" href="#">面包屑导航样式--带线条的</a>
+    <hr>
+  </div>
+
+  <p class="nav-bread n-b-large">面包屑导航样式--large</p>
+
+  <p class="nav-bread n-b-info ft-icon-left"><a href="#">面包屑导航样式2</a></p>
+
+</div>
+
+<h2 class="h2">图片/分页/列表:</h2>
+
+<div class="idx-contain">
+<h3 class="h3">圆角图片：</h3>
+
+<div style="width:60px;"><img class="box-circle" src="../../resource/image/temp/test.jpg"/></div>
+
+<h3 class="h3">分页：</h3>
+
+<div class="pager">
+  <div class="p-list">
+    <a disabled href="" class="p-item ft-icon-toleft"></a
+      ><a disabled href="" class="p-item current">1</a
+    ><a href="" class="p-item ">2</a
+    ><a href="" class="p-item ">3</a
+    ><a href="" class="p-item ">4</a
+    ><a href="" class="p-item ">5</a
+    ><s class="p-item p-splite">...</s
+    ><a href="" class="p-item ">500</a
+    ><a href="" class="p-item ft-icon-toright"></a>
+  </div>
+  <div class="p-list p-total">共<s id="pageTotal">500</s>页</div>
+  <div class="p-list">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-addon">页</span>
+    </div>
+  </div>
+  <div class="p-list"><em class="btn btn-default ">跳转</em></div>
+</div>
+<h3 class="h3">分页形式2：</h3>
+
+<div class="pager">
+  <div class="p-list">
+    <a disabled href="" class="p-item ft-icon-toleft"></a
+      ><a disabled href="" class="p-item">1</a
+    ><s class="p-item p-splite">...</s
+    ><a href="" class="p-item ">22</a
+    ><a href="" class="p-item current">23</a
+    ><a href="" class="p-item ">24</a
+    ><a href="" class="p-item ">25</a
+    ><s class="p-item p-splite">...</s
+    ><a href="" class="p-item ">500</a
+    ><a href="" class="p-item ft-icon-toright"></a>
+  </div>
+  <div class="p-list p-total">共<s id="pageTotal">500</s>页</div>
+  <div class="p-list">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-addon">页</span>
+    </div>
+  </div>
+  <div class="p-list"><em class="btn btn-default ">跳转</em></div>
+</div>
+<h3 class="h3">分页形式3：</h3>
+
+<div class="pager">
+  <div class="p-list">
+    <a disabled href="" class="p-item ft-icon-toleft"></a
+      ><a disabled href="" class="p-item">1</a
+    ><s class="p-item p-splite">...</s
+    ><a href="" class="p-item ">496</a
+    ><a href="" class="p-item current">497</a
+    ><a href="" class="p-item ">498</a
+    ><a href="" class="p-item ">499</a
+    ><a href="" class="p-item ">500</a
+    ><a href="" class="p-item ft-icon-toright"></a>
+  </div>
+  <div class="p-list p-total">共<s id="pageTotal">500</s>页</div>
+  <div class="p-list">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-addon">页</span>
+    </div>
+  </div>
+  <div class="p-list"><em class="btn btn-default ">跳转</em></div>
+</div>
+
+<h3 class="h3">filter simple:</h3>
+
+<div class="filter filter-sm">
+  <div class="filter-list">
+    <dl>
+      <dt>采购购价：</dt>
+      <dd class="text-orange">￥40000.00</dd>
+    </dl>
+    <dl>
+      <dt>市场价：</dt>
+      <dd>￥40000.00</dd>
+    </dl>
+    <dl>
+      <dt>库存：</dt>
+      <dd>400</dd>
+    </dl>
+    <dl>
+      <dt>物流费用：</dt>
+      <dd class="ft-icon-search-after">查看运费</dd>
+    </dl>
+    <dl>
+      <dt>颜色：</dt>
+      <dd class="check-filter">
+        <a class="item checked">黑</a>
+        <a class="item" disabled>黑黑</a>
+        <a class="item">黑</a>
+      </dd>
+    </dl>
+    <dl>
+      <dt>颜色：</dt>
+      <dd class="check-filter">
+        <a class="item checked">黑</a>
+        <a class="item" disabled>黑黑</a>
+        <a class="item">黑</a>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<h3 class="h3">filter simple -- double:</h3>
+
+<div class="filter filter-double">
+  <div class="filter-list">
+    <dl>
+      <dt>属性：</dt>
+      <dd><a href="">属性1</a></dd>
+    </dl>
+    <dl>
+      <dt>属属性：</dt>
+      <dd><a href="">属性属性1</a></dd>
+    </dl>
+    <dl>
+      <dt>属属属性：</dt>
+      <dd><a href="">属性属性1</a></dd>
+    </dl>
+    <dl>
+      <dt>属性：</dt>
+      <dd><a href="">属性1</a></dd>
+    </dl>
+    <dl>
+      <dt>属属性：</dt>
+      <dd><a href="">属性1</a></dd>
+    </dl>
+  </div>
+</div>
+
+<h3 class="h3">filter large:</h3>
+
+<div class="filter filter-bordered filter-lg">
+  <div class="form-bg-gray toolbar">Andy<span class="f-describe-right">客户编号:A333333</span></div>
+  <div class="filter-list">
+    <dl>
+      <dt>联系电话：</dt>
+      <dd>18678787878</dd>
+    </dl>
+    <dl>
+      <dt>通讯地址：</dt>
+      <dd>叉叉监狱是我家</dd>
+    </dl>
+    <dl>
+      <dt>发票抬头：</dt>
+      <dd>飞天飞天飞天飞天飞天（发票类型：办公用品)</dd>
+    </dl>
+  </div>
+</div>
+
+<h3 class="h3">filter、tool bar:</h3>
+
+<div class="filter filter-bordered-s">
+  <div class="form-bg-gray toolbar"><a class="text-blue">"电脑"</a> &nbsp;找到333件相关商品</div>
+  <div class="filter-list">
+    <dl>
+      <dt>属性：</dt>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+    </dl>
+    <dl>
+      <dt>属性属性：</dt>
+      <dd><a href="">属性性性属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+    </dl>
+    <dl>
+      <dt>属性属性：</dt>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+      <dd><a href="">属性1</a></dd>
+    </dl>
+  </div>
+</div>
+<div class="form-inline form-bg-gray toolbar">
+  <div class="form-group form-group-sm">
+    <div class="input-group">
+      <div class="input-group-addon input-sm">供应商 :</div>
+      <select type="text" class="form-control" id="">
+        <option>飞飞商城</option>
+        <option>飞飞商城</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group form-group-sm uiDropDownList">
+
+  </div>
+  <div class="form-group form-group-sm uiTweenValue">
+
+  </div>
+  <div class="form-group form-group-sm">
+    <div class="input-group">
+      <div class="input-group-addon input-sm">价格 :</div>
+      <input type="text" class="form-control" id="" placeholder="￥">
+
+      <div class="input-group-addon input-sm">─</div>
+      <input type="text" class="form-control" id="" placeholder="￥">
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <em class="btn btn-default btn-sm-w">价格</em>
+  </div>
+  <div class="form-group form-group-sm">
+    <em class="btn btn-default btn-sm-w">销量</em>
+  </div>
+</div>
+
+
+</div>
+
+<h2 class="h2">栅格:</h2>
+
+<div class="idx-contain">
+  <h3 class="h3">栅格</h3>
+  <!-- 编辑商品栏 -->
+  <div class="btn-area btn-edit-goods b-a-r">
+    <em class="btn btn-default ft-icon-success control-select-all">全选</em>
+    <em class="btn btn-default control-volume-sell">批量上架</em>
+    <em class="btn btn-default control-volume-presell">批量预售</em>
+    <em class="btn btn-default ft-icon-error control-deselect">取消选择</em>
+    <em class="btn btn-default ft-icon-error control-goback">返回</em>
+    <em class="btn btn-default ft-icon-plus btn-message control-volume-edit">批量编辑</em>
+  </div>
+  <!-- 编辑商品栏结束 -->
+  <div class="row wrapper-product control-product"><!-- wrapper product Beginning -->
+
+    <div class="col-sm-6 col-md-3" data-id="0" data-status-sell="yes" data-status-presell="no" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="1" data-status-sell="no" data-status-presell="yes" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="2" data-status-sell="no" data-status-presell="no" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="3" data-status-sell="yes" data-status-presell="yes" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="4" data-status-sell="yes" data-status-presell="no" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="5" data-status-sell="no" data-status-presell="yes" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="6" data-status-sell="yes" data-status-presell="yes" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3" data-id="7" data-status-sell="yes" data-status-presell="yes" data-status-mark="yes">
+      <div class="thumbnail clearfix">
+        <div class="p-img-area">
+          <a href=""><img src="../../resource/image/temp/test.jpg" alt="联想--图片宽度225px"></a>
+        </div>
+        <div class="caption">
+          <h3><a href="">联想联想联想</a></h3>
+
+          <p class="p-price">采购价：<s>￥250</s><i class="ft-icon-collect"></i></p>
+          <a href="" class="p-describe">飞飞商城</a>
+        </div>
+        <div class="btn-area btn-group clearfix">
+          <em class="btn btn-solid ft-icon-success">上架</em><em class="btn btn-solid">预售</em>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<h2 class="h2">表格:</h2>
+
+<div class="idx-contain">
+  <h3 class="h3">默认Table -- table-ft-hover</h3>
+  <table id="myTable" class="table table-ft-hover">
+    <thead>
+    <tr>
+      <th style="min-width:30px;">序号</th>
+      <th style="min-width:7%;">分行号</th>
+      <th style="min-width:16%;">分行名称</th>
+      <th style="min-width:9%;">上级分行</th>
+      <th style="min-width:12%;">分行电话</th>
+      <th style="">分行地址</th>
+    </tr>
+    <!-- table action area Beginning -->
+    <tr class="table-action-box">
+      <td colspan=6 id="tableActionArea"></td>
+    </tr>
+    <!-- table action area Ending -->
+    </thead>
+    <tbody>
+    <tr>
+      <td><input type="hidden" id="pid" value="1">1</td>
+      <td>100101</td>
+      <td>广州银行越秀支行</td>
+      <td>广州分行</td>
+      <td>020-8888888</td>
+      <td>银行开在我家楼上的楼上的楼上的楼上</td>
+    </tr>
+    <tr>
+      <td><input type="hidden" id="pid" value="2">2</td>
+      <td>100101</td>
+      <td>广州银行越秀支行</td>
+      <td>广州分行</td>
+      <td>020-8888888</td>
+      <td>银行开在我家楼上的楼上的楼上的楼上的楼上的楼上的楼上的楼上啊</td>
+    </tr>
+    <tr>
+      <td><input type="hidden" id="pid" value="3">3</td>
+      <td>100101</td>
+      <td>广州银行越秀支行</td>
+      <td>广州分行</td>
+      <td>020-8888888</td>
+      <td>银行开在我家楼上的楼上的楼上的楼上</td>
+    </tr>
+    </tbody>
+  </table>
+  <p class="p">默认Table -- table</p>
+
+  <p class="p">紧缩Table -- table-condensed</p>
+
+  <p class="p">条纹状Table -- table-striped</p>
+
+  <p class="p">带边框Table -- table-bordered</p>
+
+  <p class="p">Hover Table -- table-hover</p>
+  <h4 class="h4">Table状态类（通过这些状态类可以为行或单元格设置颜色。）</h4>
+
+  <p class="p">.active -- 鼠标悬停在行或单元格上时所设置的颜色</p>
+
+  <p class="p">.success -- 标识成功或积极的动作</p>
+
+  <p class="p">.info -- 标识普通的提示信息或动作</p>
+
+  <p class="p">.warning -- 标识警告或需要用户注意</p>
+
+  <p class="p">.danger -- 标识危险或潜在的带来负面影响的动作</p>
+</div>
+
+<h2 class="h2">产品UI:</h2>
+
+<div class="idx-contain">
+  <h3 class="h3">产品UI--轮播</h3>
+
+  <div class="product-img" style="width:500px;">
+    <div class="p-i-screen">
+      <img class="item-img" src="../../resource/image/temp/p1.jpg">
+    </div>
+    <div class="p-list clearfix">
+      <i class="ft-icon-toleft"></i>
+      <ul class="p-list-box">
+        <li class="p-l-item current"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+        <li class="p-l-item"><img src="../../resource/image/temp/p1.jpg"></li>
+      </ul>
+      <i class="ft-icon-toright"></i>
+    </div>
+  </div>
+
+
+</div>
+
+<h2 class="h2">OTHER:</h2>
+
+<div class="idx-contain">
+
+</div>
+
+</div>
+</body>
+
+</html>

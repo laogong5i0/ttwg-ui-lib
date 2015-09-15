@@ -37,7 +37,7 @@
 .check-filter{}
 .check-filter .item{ float:left; margin-bottom:4px; margin-right:6px; border-style:solid; border-color:#ccc; border-width:1px; padding:8px 10px; line-height:1; color:#333; cursor:pointer; }
 .check-filter .item:hover{ border-color:#B9B8B8; }
-.check-filter .item.checked{ background:url(../../resource/image/base/sprite.png) right 0 no-repeat; border-color:#fe7110; }
+.check-filter .item.checked{ background:url(../images/base/sprite.png) right 0 no-repeat; border-color:#fe7110; }
 .check-filter .item.disabled{ background:none; border-style:dashed; border-color:#ccc; color:#ccc; cursor:no-drop; }
 
 /* 产品图片区域 */

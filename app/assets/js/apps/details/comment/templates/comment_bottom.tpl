@@ -1,0 +1,1 @@
+<div>全部评论（<%= bottomData %>）</div>

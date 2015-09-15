@@ -1,0 +1,31 @@
+<!-- Template File for use with targethtml -->
+<!doctype html>
+  <head>
+    <!-- TODO: Manually write with project name -->
+
+    <title>testapp</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="assets/css/app.combined.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/icon.css"/>
+    <link rel="stylesheet" href="../assets/css/signin.css"/>
+    
+  </head>
+  <body>
+
+    <div id="main-region">
+      <h3>登录</h3>
+    </div>
+    
+    <div id="dialog-region"></div>
+    
+      <script data-main="assets/require_main" src="/lib/requirejs/require.js"></script>
+      
+      <script type="text/javascript">
+        require(['js/apps/signIn/signIn_app'], function(App){
+        })
+      </script>
+  </body>
+</html>
